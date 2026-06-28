@@ -4,7 +4,7 @@ export default function Topbar({ title }) {
       <h2>{title}</h2>
       <div className="topbar-right">
         <span className="badge-live">● Live</span>
-        <div className="avatar">NS</div>
+        <div className="avatar">MP</div>
       </div>
     </div>
   );

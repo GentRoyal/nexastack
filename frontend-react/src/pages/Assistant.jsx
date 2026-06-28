@@ -25,7 +25,7 @@ function Message({ msg }) {
         <div style={{ width:32, height:32, borderRadius:"50%", background:"var(--primary)",
           color:"#fff", display:"flex", alignItems:"center", justifyContent:"center",
           fontSize:13, fontWeight:700, flexShrink:0, marginTop:2 }}>
-          NS
+          MP
         </div>
       )}
       <div style={{
@@ -61,7 +61,7 @@ function TypingIndicator() {
       <div style={{ width:32, height:32, borderRadius:"50%", background:"var(--primary)",
         color:"#fff", display:"flex", alignItems:"center", justifyContent:"center",
         fontSize:13, fontWeight:700, flexShrink:0 }}>
-        NS
+        MP
       </div>
       <div style={{ background:"#fff", border:"1px solid var(--grey-200)", borderRadius:"16px 16px 16px 4px",
         padding:"14px 18px", display:"flex", gap:6, alignItems:"center" }}>

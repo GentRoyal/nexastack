@@ -13,7 +13,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://nexastack-g3ntroyal.vercel.app/",  # replace with your actual Vercel URL
+        "https://nexastack-weld.vercel.app/", 
     ],
     allow_methods=["*"],
     allow_headers=["*"],

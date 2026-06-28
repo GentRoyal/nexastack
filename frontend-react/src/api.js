@@ -1,4 +1,4 @@
-const BASE = "http://127.0.0.1:8000" || "https://nexastack-api.onrender.com/";
+const BASE = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
 
 const get = (path) => fetch(`${BASE}${path}`).then(r => r.json());
 

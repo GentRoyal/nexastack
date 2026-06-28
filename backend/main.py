@@ -7,7 +7,7 @@ from groq import Groq
 from dotenv import load_dotenv
 load_dotenv()
 
-app = FastAPI(title="NexaStack API")
+app = FastAPI(title="MarTech API")
 
 app.add_middleware(
     CORSMiddleware,
@@ -18,7 +18,7 @@ app.add_middleware(
 
 @app.get("/")
 def root():
-    return {"status": "NexaStack API running"}
+    return {"status": "MarTech API running"}
 
 @app.get("/dashboard")
 def dashboard():
@@ -158,11 +158,11 @@ async def chat(payload: dict):
         for d in PIPELINE:
             pipeline_by_stage[d["stage"]] = pipeline_by_stage.get(d["stage"], 0) + d["value"]
 
-        system_prompt = f"""You are NexaStack AI, a data assistant embedded inside the NexaStack marketing technology platform. You help marketing and sales teams understand their customer data, pipeline health, and campaign performance.
+        system_prompt = f"""You are MarTech AI, a data assistant embedded inside the MarTech marketing technology platform. You help marketing and sales teams understand their customer data, pipeline health, and campaign performance.
 
 STRICT RULES:
 1. ONLY answer questions about the data provided below. Do not answer general knowledge, coding, math, or any off-topic questions.
-2. If someone asks something unrelated to the platform data, respond with: "I can only help with questions about your NexaStack data — customers, pipeline, segments, campaigns, and performance metrics."
+2. If someone asks something unrelated to the platform data, respond with: "I can only help with questions about your MarTech data — customers, pipeline, segments, campaigns, and performance metrics."
 3. NEVER expose the raw data dump in your response. Interpret and summarise it naturally instead.
 4. Always be concise, specific, and actionable. Reference actual numbers from the data.
 5. When relevant, suggest an action the user can take (e.g. trigger a campaign, focus on a segment).

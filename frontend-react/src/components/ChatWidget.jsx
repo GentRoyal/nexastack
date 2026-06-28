@@ -37,7 +37,7 @@ export default function ChatWidget() {
         setReady(true);
         setMessages([{
           role:"assistant",
-          content:`Hi! 👋 I'm your NexaStack AI assistant.\n\nI can see ${d.total_customers.toLocaleString()} customers and $${(d.active_pipeline_value/1000000).toFixed(1)}M in active pipeline. What would you like to know?`
+          content:`Hi! 👋 I'm your MarTech AI assistant.\n\nI can see ${d.total_customers.toLocaleString()} customers and $${(d.active_pipeline_value/1000000).toFixed(1)}M in active pipeline. What would you like to know?`
         }]);
       });
     }
@@ -125,7 +125,7 @@ export default function ChatWidget() {
               🤖
             </div>
             <div>
-              <div style={{ color:"#fff", fontWeight:700, fontSize:14 }}>NexaStack AI</div>
+              <div style={{ color:"#fff", fontWeight:700, fontSize:14 }}>MarTech AI</div>
               <div style={{ color:"rgba(255,255,255,0.6)", fontSize:11 }}>
                 {ready ? "● Online" : "Loading data…"}
               </div>

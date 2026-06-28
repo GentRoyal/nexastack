@@ -15,7 +15,7 @@ export default function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
-        <h1>NexaStack</h1>
+        <h1>MarTech</h1>
         <span>MarTech Platform</span>
       </div>
       <nav>
@@ -30,7 +30,7 @@ export default function Sidebar() {
           </NavLink>
         ))}
       </nav>
-      <div className="sidebar-footer">NexaStack v1.0 MVP</div>
+      <div className="sidebar-footer">MarTech v1.0 MVP</div>
     </aside>
   );
 }

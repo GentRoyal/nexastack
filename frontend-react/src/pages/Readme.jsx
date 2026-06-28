@@ -63,7 +63,7 @@ export default function Readme() {
         {/* Hero */}
         <div style={{ background:"var(--primary)", borderRadius:12, padding:"32px 36px",
           marginBottom:32, color:"#fff" }}>
-          <div style={{ fontSize:28, fontWeight:800, marginBottom:8 }}>NexaStack</div>
+          <div style={{ fontSize:28, fontWeight:800, marginBottom:8 }}>MarTech</div>
           <div style={{ fontSize:16, color:"rgba(255,255,255,0.7)", marginBottom:16 }}>
             A unified Marketing Technology Platform integrating CDP + CRM for B2B SaaS teams
           </div>
@@ -75,16 +75,16 @@ export default function Readme() {
           </div>
         </div>
 
-        <Section title="📌 What is NexaStack?">
+        <Section title="📌 What is MarTech?">
           <p style={{ fontSize:14, lineHeight:1.8, color:"var(--grey-600)", marginBottom:12 }}>
-            NexaStack is a high-level MVP of a marketing technology platform that demonstrates
+            MarTech is a high-level MVP of a marketing technology platform that demonstrates
             the integration between a <strong>Customer Data Platform (CDP)</strong> and a
             <strong> Customer Relationship Management (CRM)</strong> system — two tools that are
             typically siloed in most organisations.
           </p>
           <p style={{ fontSize:14, lineHeight:1.8, color:"var(--grey-600)" }}>
             The core idea: <strong>CDP tells you who your customers are and how they behave.
-            CRM tells you what to do about it.</strong> NexaStack unifies both into one interface
+            CRM tells you what to do about it.</strong> MarTech unifies both into one interface
             so marketing and sales teams are always aligned.
           </p>
         </Section>
@@ -161,7 +161,7 @@ export default function Readme() {
         <Section title="🤖 AI Assistant">
           <InfoBox type="warning">
             The AI Assistant is powered by <strong>Groq (LLaMA 3)</strong> and is included as a
-            quick demo only. The model is <strong>not fine-tuned</strong> on NexaStack data —
+            quick demo only. The model is <strong>not fine-tuned</strong> on MarTech data —
             it receives a structured context summary of your current platform data with each query
             and reasons over it in real time. Responses may not always be perfectly accurate.
             For production use, this would be replaced with a fine-tuned or RAG-based model.
@@ -192,7 +192,7 @@ export default function Readme() {
     </div>
     <div style={{ background:"#1e293b", borderRadius:8, padding:16, fontFamily:"monospace",
       fontSize:13, color:"#e2e8f0", lineHeight:2 }}>
-      <div>cd nexastack</div>
+      <div>cd MarTech</div>
     </div>
   </div>
   <div style={{ marginBottom:16 }}>
@@ -277,7 +277,7 @@ export default function Readme() {
 
         <div style={{ textAlign:"center", padding:"24px 0", fontSize:12, color:"var(--grey-400)",
           borderTop:"1px solid var(--grey-200)", marginTop:8 }}>
-          NexaStack MVP · Built with FastAPI + React · June 2026
+          MarTech MVP · Built with FastAPI + React · June 2026
         </div>
 
       </div>

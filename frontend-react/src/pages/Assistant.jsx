@@ -96,7 +96,7 @@ export default function Assistant() {
         // Welcome message
         setMessages([{
           role:"assistant",
-          content: `Hi! I'm the NexaStack AI Assistant 👋\n\nI have access to your current platform data — ${dashboard.total_customers.toLocaleString()} customers, ${dashboard.at_risk_accounts} at-risk accounts, and $${(dashboard.active_pipeline_value/1000000).toFixed(1)}M in active pipeline.\n\nAsk me anything about your customers, pipeline, segments, or campaigns.`,
+          content: `Hi! I'm the MarTech AI Assistant 👋\n\nI have access to your current platform data — ${dashboard.total_customers.toLocaleString()} customers, ${dashboard.at_risk_accounts} at-risk accounts, and $${(dashboard.active_pipeline_value/1000000).toFixed(1)}M in active pipeline.\n\nAsk me anything about your customers, pipeline, segments, or campaigns.`,
           timestamp: now()
         }]);
       });
@@ -116,7 +116,7 @@ export default function Assistant() {
     const segs = context.segments;
     const camps = context.campaigns;
 
-    return `You are NexaStack AI, an intelligent assistant for a B2B SaaS marketing technology platform that integrates CDP (Customer Data Platform) and CRM (Customer Relationship Management) data.
+    return `You are MarTech AI, an intelligent assistant for a B2B SaaS marketing technology platform that integrates CDP (Customer Data Platform) and CRM (Customer Relationship Management) data.
 
 Here is the current state of the platform data:
 

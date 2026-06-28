@@ -1,0 +1,34 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Sidebar from "./components/Sidebar";
+import Dashboard from "./pages/Dashboard";
+import Segments from "./pages/Segments";
+import Pipeline from "./pages/Pipeline";
+import Customer360 from "./pages/Customer360";
+import Campaigns from "./pages/Campaigns";
+import Analytics from "./pages/Analytics";
+import Readme from "./pages/Readme";
+import ChatWidget from "./components/ChatWidget";
+
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <div className="layout">
+        <Sidebar />
+        <div className="main">
+          <Routes>
+            <Route path="/"            element={<Dashboard />} />
+            <Route path="/segments"    element={<Segments />} />
+            <Route path="/pipeline"    element={<Pipeline />} />
+            <Route path="/customers"   element={<Customer360 />} />
+            <Route path="/campaigns"   element={<Campaigns />} />
+            <Route path="/analytics"   element={<Analytics />} />
+            <Route path="/readme"      element={<Readme />} />
+            
+          </Routes>
+        </div>
+        <ChatWidget />
+      </div>
+    </BrowserRouter>
+  );
+}

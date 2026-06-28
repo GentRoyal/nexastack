@@ -1,0 +1,6 @@
+backend/venv/
+backend/.env
+frontend-react/node_modules/
+frontend-react/.env
+__pycache__/
+*.pyc

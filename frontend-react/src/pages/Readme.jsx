@@ -123,31 +123,6 @@ export default function Readme() {
             <div>CRM Layer → Deals, pipeline stages, and sales activity</div>
             <div>Analytics/Activation Layer → Segmentation, reporting, and insights</div>
           </div>
-          <div className="grid-2">
-            <div style={{ background: "var(--grey-50)", borderRadius: 8, padding: 16 }}>
-              <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 8, color: "var(--primary)" }}>
-                Backend
-              </div>
-              <div style={{ fontSize: 13, color: "var(--grey-600)", lineHeight: 1.8 }}>
-                <div>⚙️ <strong>FastAPI</strong> — REST API framework</div>
-                <div>🐍 <strong>Python 3.10+</strong></div>
-                <div>📦 <strong>Uvicorn</strong> — ASGI server</div>
-                <div>🔢 <strong>Synthetic data generator</strong> — 1,000+ customers (configurable)</div>
-                <div>☁️ Deployed on <strong>Render.com</strong></div>
-              </div>
-            </div>
-            <div style={{ background: "var(--grey-50)", borderRadius: 8, padding: 16 }}>
-              <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 8, color: "var(--primary)" }}>
-                Frontend
-              </div>
-              <div style={{ fontSize: 13, color: "var(--grey-600)", lineHeight: 1.8 }}>
-                <div>⚛️ <strong>React</strong> + <strong>Vite</strong></div>
-                <div>🔀 <strong>React Router</strong> — client-side routing</div>
-                <div>🎨 <strong>Vanilla CSS</strong> — no UI library dependency</div>
-                <div>☁️ Deployed on <strong>Vercel</strong></div>
-              </div>
-            </div>
-          </div>
         </Section>
 
         {/* Data Model */}
@@ -251,7 +226,7 @@ export default function Readme() {
         </Section>
 
         {/* Experimental Extensions */}
-        <Section title="🔮 Experimental Extensions (Under Development)">
+        <Section title="🔮 Possible Extensions">
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
             {[
               { title: "Churn Prediction",      desc: "ML model to identify customers at risk of churn based on behavioral signals" },
